@@ -24,8 +24,8 @@
 - [ok] ft_memchr.c     
 - [ok] ft_memcmp.c      
 - [ok] ft_strnstr.c      
-- [ok] ft_atoi.c          
-- [ok] ft_calloc.c     
+- [] ft_atoi.c         
+- [] ft_calloc.c     
 - [ok] ft_strdup.c        
 
 ## Funcoes adicionais
@@ -33,7 +33,7 @@
 - [ok] ft_substr.c   
 - [ok] ft_strjoin.c    
 - [ok] ft_strtrim.c   
-- [ok] ft_split.c      
+- [] ft_split.c      
 - [ok] ft_itoa.c  
 - [ok] ft_strmapi.c    
 - [ok] ft_striteri.c  

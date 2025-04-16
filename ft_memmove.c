@@ -12,6 +12,7 @@
 
 #include "libft.h"
 
+//Copies n bytes from src to dst. It uses a temporary array between the copy. 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	char	*tmp_dst;

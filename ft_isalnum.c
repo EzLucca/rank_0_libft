@@ -15,7 +15,27 @@ int	ft_isalnum(int c)
 	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z')
 		|| (c >= '0' && c <= '9'))
 	{
-		return (1);
+		return (c);
 	}
 	return (0);
 }
+
+
+// #include "libft.h"
+// #include <stdio.h>
+// #include <ctype.h>
+//
+// int ft_isalpha(int c);
+// int ft_isdigit(int c);
+//
+// int	ft_isalnum(int c)
+// {
+// 	return (ft_isalpha(c) || ft_isdigit(c));
+// }
+//
+// int	main()
+// {
+// 	printf("ft_isalnum: %d | isalnum: %d\n", ft_isalnum('5'), isalnum('5'));
+// 	printf("ft_isalnum: %d | isalnum: %d\n", ft_isalnum(';'), isalnum(';'));
+// 	printf("ft_isalnum: %d | isalnum: %d\n", ft_isalnum('0'), isalnum('0'));
+// }

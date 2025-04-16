@@ -12,6 +12,7 @@
 
 #include "libft.h"
 
+//Copy n bytes from src to dst. Must not overlap.
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	unsigned char	*tmp_dst;
