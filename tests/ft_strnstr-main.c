@@ -9,6 +9,6 @@ int	main()
 	char *needle= "is";
 	size_t	len = 9;
 
-	printf("ft_strnstr is: %s\n", ft_strnstr(haystack, needle, len));
-	printf("strnstr is: %s\n", strnstr(haystack, needle, len));
+	printf("ft_strnstr: %s\n", ft_strnstr(haystack, needle, len));
+	printf("strnstr: %s\n", strnstr(haystack, needle, len));
 }

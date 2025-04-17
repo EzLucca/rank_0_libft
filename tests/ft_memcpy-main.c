@@ -5,12 +5,12 @@
 
 int main () 
 {
-	char str[50] = "Welcome to Hive Helsinki";
-	char src[50];
-	char str2[50] = "Welcome to Hive Helsinki";
-	char src2[50];
+	char str[50];
+	char src[50] = "Welcome to Hive Helsinki";
+	char str2[50];
+	char src2[50] = "Welcome to Hive Helsinki";
 
-	puts(str);
+	printf("str: %s", str);
 	puts(src);
 	memcpy(str, src, 7);
 	puts(str);

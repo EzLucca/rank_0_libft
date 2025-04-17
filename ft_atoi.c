@@ -13,26 +13,27 @@
 // protect
 int	ft_atoi(char *str)
 {
-	int	number;
-	int	signal;
+	long int	number;
+	int			signal;
 
 	number = 0;
-	signal = 0;
+	signal = 1;
 	while ((*str >= 9 && *str <= 13) || (*str == 32))
 		++str;
-	if(*str == '+' || *str == '-')
+	if (*str == '+' || *str == '-')
 	{
 		if (*str == '-')
-			signal++;
+			signal = -1;
 		++str;
 	}
 	while (*str >= 48 && *str <= 57)
 	{
-		number *= 10;
-		number += (*str - 48);
+		number = number * 10 + (*str - 48);
 		++str;
+		if (number < 0 && signal == 1)
+			return (-1);
+		else if (number < 0 && signal == -1)
+			return (0);
 	}
-	if ((signal % 2) == 0)
-		return (number);
-	return (-number);
+	return ((int)(number * signal));
 }
