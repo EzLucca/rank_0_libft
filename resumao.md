@@ -16,42 +16,42 @@
 - [ok] ft_memmove.c       
 - [ok] ft_strlcpy.c       
 - [ok] ft_strlcat.c       
-- [ok] ft_toupper.c       
-- [ok] ft_tolower.c       
-- [ok] ft_strchr.c
-- [ok] ft_strrchr.c      
-- [ok] ft_strncmp.c        
-- [ok] ft_memchr.c     
-- [ok] ft_memcmp.c      
-- [ok] ft_strnstr.c      
+- [] ft_toupper.c       
+- [] ft_tolower.c       
+- [] ft_strchr.c
+- [] ft_strrchr.c      
+- [] ft_strncmp.c        
+- [] ft_memchr.c     
+- [] ft_memcmp.c      
+- [] ft_strnstr.c      
 - [] ft_atoi.c         
 - [] ft_calloc.c     
-- [ok] ft_strdup.c        
+- [] ft_strdup.c        
 
 ## Funcoes adicionais
 
-- [ok] ft_substr.c   
-- [ok] ft_strjoin.c    
-- [ok] ft_strtrim.c   
+- [] ft_substr.c   
+- [] ft_strjoin.c    
+- [] ft_strtrim.c   
 - [] ft_split.c      
-- [ok] ft_itoa.c  
-- [ok] ft_strmapi.c    
-- [ok] ft_striteri.c  
-- [ok] ft_putchar_fd.c 
-- [ok] ft_putstr_fd.c  
-- [ok] ft_putendl_fd.c 
-- [ok] ft_putnbr_fd.c  
+- [] ft_itoa.c  
+- [] ft_strmapi.c    
+- [] ft_striteri.c  
+- [] ft_putchar_fd.c 
+- [] ft_putstr_fd.c  
+- [] ft_putendl_fd.c 
+- [] ft_putnbr_fd.c  
 
 
 ## Bonus functions
 
-- [ok] ft_lstnew_bonus.c
-- [ok] ft_lstadd_front_bonus.c
-- [ok] ft_lstsize_bonus.c
-- [ok] ft_lstlast_bonus.c
-- [ok] ft_lstadd_back_bonus.c
-- [ok] ft_lstdelone_bonus.c
-- [ok] ft_lstclear_bonus.c
-- [ok] ft_lstiter_bonus.c
-- [ok] ft_lstmap_bonus.c
+- [] ft_lstnew_bonus.c
+- [] ft_lstadd_front_bonus.c
+- [] ft_lstsize_bonus.c
+- [] ft_lstlast_bonus.c
+- [] ft_lstadd_back_bonus.c
+- [] ft_lstdelone_bonus.c
+- [] ft_lstclear_bonus.c
+- [] ft_lstiter_bonus.c
+- [] ft_lstmap_bonus.c
 
