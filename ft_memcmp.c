@@ -12,6 +12,7 @@
 
 #include "libft.h"
 
+//Compare the n bytes of each string s1 ans s2
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	unsigned char	*str1;
@@ -23,7 +24,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	i = 0;
 	while (i < n)
 	{
-		if ((unsigned char) str1[i] != (unsigned char) str2[i])
+		if (str1[i] != str2[i])
 			return ((unsigned char) str1[i] - (unsigned char) str2[i]);
 		i++;
 	}

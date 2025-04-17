@@ -12,6 +12,7 @@
 
 #include <unistd.h>
 
+//return a ptr to the first char c in the string s
 char	*ft_strchr(const char *s, int c)
 {
 	unsigned int	i;

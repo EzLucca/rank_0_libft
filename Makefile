@@ -6,7 +6,7 @@ CFLAGS = -Wall -Wextra -Werror
 
 AR = ar rcs
 
-RF = rm -f
+RM = rm -f
 
 SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_strlen.c \
 		ft_strncmp.c ft_isascii.c ft_isprint.c ft_memset.c \

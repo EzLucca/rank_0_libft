@@ -13,19 +13,20 @@
 // #include "libft.h"
 #include <unistd.h>
 
+//Scan n bytes for c in the memory area pointed by s
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	unsigned char	*str;
-	unsigned char	uc;
+	unsigned char	*string;
+	unsigned char	instance_c;
 	size_t			i;
 
-	str = (unsigned char *)s;
-	uc = (unsigned char)c;
+	string = (unsigned char *)s;
+	instance_c = (unsigned char)c;
 	i = 0;
 	while (i < n)
 	{
-		if (str[i] == uc)
-			return ((void *)&str[i]);
+		if (string[i] == instance_c)
+			return ((void *)&string[i]);
 		i++;
 	}
 	return (NULL);
