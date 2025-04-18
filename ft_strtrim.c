@@ -14,7 +14,6 @@
 
 static int	to_trim(char const *set, char c);
 static char	*new_str(char const *s1, size_t start, size_t len);
-static char	*ft_strdup(char *src);
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
@@ -63,23 +62,4 @@ static int	to_trim(char const *set, char c)
 		i++;
 	}
 	return (0);
-}
-
-static char	*ft_strdup(char *src)
-{
-	char	*newstr;
-	int		i;
-
-	i = 0;
-	newstr = (char *) malloc(sizeof(char) * (ft_strlen(src) + 1));
-	if (newstr)
-	{
-		while (src[i])
-		{
-			newstr[i] = src[i];
-			i++;
-		}
-		newstr[i] = '\0';
-	}
-	return (newstr);
 }

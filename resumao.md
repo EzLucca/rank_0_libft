@@ -12,20 +12,20 @@
 - [ok] ft_strlen.c         
 - [ok] ft_memset.c        
 - [ok] ft_bzero.c         
-- [] ft_memcpy.c 
-- [] ft_memmove.c       
+- [ok] ft_memcpy.c 
+- [ok] ft_memmove.c       
 - [ok] ft_strlcpy.c       
 - [ok] ft_strlcat.c       
 - [ok] ft_toupper.c       
 - [ok] ft_tolower.c       
 - [ok] ft_strchr.c
 - [ok] ft_strrchr.c      
-- [] ft_strncmp.c        
+- [ok] ft_strncmp.c        
 - [ok] ft_memchr.c     
 - [ok] ft_memcmp.c      
 - [ok] ft_strnstr.c      
-- [] ft_atoi.c         
-- [] ft_calloc.c     
+- [ok] ft_atoi.c         
+- [ok] ft_calloc.c     
 - [] ft_strdup.c        
 
 ## Funcoes adicionais

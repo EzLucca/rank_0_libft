@@ -11,25 +11,25 @@
 /* ************************************************************************** */
 
 // protect
-int	ft_atoi(char *str)
+int	ft_atoi(const char *nptr)
 {
 	long int	number;
 	int			signal;
 
 	number = 0;
 	signal = 1;
-	while ((*str >= 9 && *str <= 13) || (*str == 32))
-		++str;
-	if (*str == '+' || *str == '-')
+	while ((*nptr >= 9 && *nptr <= 13) || (*nptr == 32))
+		++nptr;
+	if (*nptr == '+' || *nptr == '-')
 	{
-		if (*str == '-')
+		if (*nptr == '-')
 			signal = -1;
-		++str;
+		++nptr;
 	}
-	while (*str >= 48 && *str <= 57)
+	while (*nptr >= 48 && *nptr <= 57)
 	{
-		number = number * 10 + (*str - 48);
-		++str;
+		number = number * 10 + (*nptr - 48);
+		++nptr;
 		if (number < 0 && signal == 1)
 			return (-1);
 		else if (number < 0 && signal == -1)

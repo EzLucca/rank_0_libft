@@ -5,22 +5,22 @@
 
 int main () 
 {
-	char str[50];
-	char src[50] = "Welcome to Hive Helsinki";
-	char str2[50];
-	char src2[50] = "Welcome to Hive Helsinki";
+	char dst[50];
+	char src[50] = "This is a string";
+	char dst2[50];
+	char src2[50] = "This is a string";
 
-	printf("str: %s", str);
-	puts(src);
-	memcpy(str, src, 7);
-	puts(str);
-	puts(src);
+	printf("before dst: %s\n", dst);
+	printf("before src: %s\n", src);
+	memcpy(dst, src, 7);
+	printf("after dst: %s\n", dst);
+	printf("after src: %s\n", src);
 
-	puts(str2);
-	puts(src2);
-	ft_memcpy(str2, src2, 7);
-	puts(str2);
-	puts(src2);
+	printf("before dst: %s\n", dst);
+	printf("before src: %s\n", src);
+	ft_memcpy(dst2, src2, 7);
+	printf("after dst: %s\n", dst);
+	printf("after src: %s\n", src);
 
 	return(0);
 }
