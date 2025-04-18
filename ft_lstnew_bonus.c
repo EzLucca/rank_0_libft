@@ -11,8 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft_bonus.h"
-#include "libft.h"
-
 
 //Allocates a new list node and sets its content and next pointer.
 t_list	*ft_lstnew(void *content)
