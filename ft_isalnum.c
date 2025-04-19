@@ -31,6 +31,9 @@ int	ft_isalnum(int c)
 // #include <stdio.h>
 // #include <ctype.h>
 //
+// #include <stdio.h>
+// #include <ctype.h>
+//
 // int	main()
 // {
 // 	printf("ft_isalnum: %d | isalnum: %d\n", ft_isalnum('5'), isalnum('5'));

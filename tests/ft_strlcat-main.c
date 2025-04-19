@@ -5,10 +5,10 @@
 
 int    main(void)
 {
-    char dst[100] = "abcd";
-    char dst2[100] = "abcd";
-    const char src[11] = "efgh";
-    int dstsize = -1;
+    char dst[100] = "1234";
+    char dst2[100] = "1234";
+    const char src[11] = "56789";
+    int dstsize = 10;
 
     printf("ft_strlcat: %zu\n", ft_strlcat(dst, src, dstsize));
     printf("%s\n", dst);

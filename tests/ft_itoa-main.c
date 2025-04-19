@@ -1,24 +1,39 @@
 #include <stdio.h>
 #include "../libft.h"
 
-int main()
+void	test_itoa(void)
 {
-  char *str = ft_itoa(-2134);
-  printf("%s\n", str);
+    printf("\n\n=========== TESTING ITOA ============\n\n");
 
-  str = ft_itoa(42);
-  printf("%s\n", str);
-  str = ft_itoa(707);
-  printf("%s\n", str);
+    int	n;
 
-  str = ft_itoa(INT32_MIN);
-  printf("%s\n", str);
+    n = 0;
+    if (!strcmp("0", ft_itoa(n)))
+        printf("OK: expected \"%d\", got \"%s\".\n", n, ft_itoa(n));
+    else
+        printf("Try again: expected \"%d\", got \"%s\".\n", n, ft_itoa(n));
 
-  str = ft_itoa(INT32_MAX);
-  printf("%s\n", str);
-  
-  str = ft_itoa(0);
-  printf("%s\n", str);
+    n = 123456789;
+    if (!strcmp("123456789", ft_itoa(n)))
+        printf("OK: expected \"%d\", got \"%s\".\n", n, ft_itoa(n));
+    else
+        printf("Try again: expected \"%d\", got \"%s\".\n", n, ft_itoa(n));
 
-  return 0;
+    n = -42;
+    if (!strcmp("-42", ft_itoa(n)))
+        printf("OK: expected \"%d\", got \"%s\".\n", n, ft_itoa(n));
+    else
+        printf("Try again: expected \"%d\", got \"%s\".\n", n, ft_itoa(n));
+
+    n = -2147483648;
+    if (!strcmp("-2147483648", ft_itoa(n)))
+        printf("OK: expected \"%d\", got \"%s\".\n", n, ft_itoa(n));
+    else
+        printf("Try again: expected \"%d\", got \"%s\".\n", n, ft_itoa(n));
+}
+
+int main ()
+{
+    test_itoa();
+    return (0);
 }
