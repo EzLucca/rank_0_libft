@@ -16,6 +16,7 @@
 //This should check if the char is a separator
 static int	is_sep(char c, char sep)
 {
+    int
 }
 
 //This function count the word of the string
