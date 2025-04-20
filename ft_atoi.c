@@ -10,26 +10,26 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-// protect
+//Transform a string into an int
 int	ft_atoi(const char *nptr)
 {
-	long int	number;
-	int			signal;
+	long    number;
+	int		signal;
 
 	number = 0;
 	signal = 1;
 	while ((*nptr >= 9 && *nptr <= 13) || (*nptr == 32))
-		++nptr;
+		nptr++;
 	if (*nptr == '+' || *nptr == '-')
 	{
 		if (*nptr == '-')
 			signal = -1;
-		++nptr;
+		nptr++;
 	}
 	while (*nptr >= 48 && *nptr <= 57)
 	{
 		number = number * 10 + (*nptr - 48);
-		++nptr;
+		nptr++;
 		if (number < 0 && signal == 1)
 			return (-1);
 		else if (number < 0 && signal == -1)
