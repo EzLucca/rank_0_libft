@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+//Checks for alphnumeric character
 int	ft_isalnum(int c)
 {
 	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z')
@@ -19,24 +20,3 @@ int	ft_isalnum(int c)
 	}
 	return (0);
 }
-
-// #include "libft.h"
-//
-// int	ft_isalnum(int c)
-// {
-// 	return (ft_isalpha(c) || ft_isdigit(c));
-// }
-//
-// // #include "libft.h"
-// #include <stdio.h>
-// #include <ctype.h>
-//
-// #include <stdio.h>
-// #include <ctype.h>
-//
-// int	main()
-// {
-// 	printf("ft_isalnum: %d | isalnum: %d\n", ft_isalnum('5'), isalnum('5'));
-// 	printf("ft_isalnum: %d | isalnum: %d\n", ft_isalnum(';'), isalnum(';'));
-// 	printf("ft_isalnum: %d | isalnum: %d\n", ft_isalnum('0'), isalnum('0'));
-// }

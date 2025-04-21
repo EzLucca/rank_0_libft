@@ -1,7 +1,7 @@
 # Tarefas e funcoes a serem concluidas to projeto Libft
 
-- [ ] libft.h
-- [ ] Makefile
+- [ok] libft.h
+- [ok] Makefile
 ## Funcoes obrigatorias
 
 - [ok] ft_isalpha.c          

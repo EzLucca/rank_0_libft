@@ -12,6 +12,7 @@
 
 #include "libft.h"
 
+//Erase n bytes from pointer s writing 0 instead
 void	ft_bzero(void *s, size_t n)
 {
 	char	*temp_ptr;

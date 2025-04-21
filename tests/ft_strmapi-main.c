@@ -5,7 +5,7 @@
 void	test(int test_nb, char *s1, char s2)
 {
 	int i = 0;
-	char **a = ft_split(s1, s2);
+	char a = ft_strmapi(s1, s2);
 
 	printf("Test %d\n", test_nb);
 	while(a[i])

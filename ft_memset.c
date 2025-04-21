@@ -12,15 +12,16 @@
 
 #include "libft.h" 
 
-void	*ft_memset(void *b, int c, size_t len)
+//Fill the n bytes of the memory area pointed by s with the constant type c
+void	*ft_memset(void *s, int c, size_t n)
 {
 	unsigned char	*temp_ptr;
 
-	temp_ptr = (unsigned char *) b;
-	while (len > 0)
+	temp_ptr = (unsigned char *) s;
+	while (n > 0)
 	{
 		(*temp_ptr++) = (unsigned char) c;
-		len--;
+		n--;
 	}
-	return (b);
+	return (s);
 }

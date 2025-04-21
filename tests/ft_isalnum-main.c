@@ -1,11 +1,27 @@
 
 #include "../libft.h"
 #include <stdio.h>
-#include <ctype.h>
 
+void	test(int s)
+{
+	if (ft_isalnum(s) == (isalnum(s)))
+	{
+		printf("%d\n", ft_isalnum(s));
+		printf("%d\n", isalnum(s));
+		printf("FAILED :(\n");
+	}
+	else
+	{
+		printf("%d\n", ft_isalnum(s));
+		printf("%d\n", isalnum(s));
+		printf("success\n");
+	}
+}
 int	main()
 {
-	printf("ft_isalnum: %d | isalnum: %d\n", ft_isalnum('5'), isalnum('5'));
-	printf("ft_isalnum: %d | isalnum: %d\n", ft_isalnum(';'), isalnum(';'));
-	printf("ft_isalnum: %d | isalnum: %d\n", ft_isalnum('0'), isalnum('0'));
+	test('s');
+	test('a');
+	test('1');
+	test('\t');
+	test('0');
 }

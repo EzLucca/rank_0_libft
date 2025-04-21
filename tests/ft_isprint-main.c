@@ -2,9 +2,28 @@
 #include <stdio.h>
 #include <ctype.h>
 
+void	test(int s)
+{
+	if (ft_isprint(s) == (isprint(s)))
+	{
+		printf("\n%d\n", ft_isprint(s));
+		printf("%d\n", isprint(s));
+		printf("FAILED :(\n\n");
+	}
+	else
+{
+		printf("\n%d\n", ft_isprint(s));
+		printf("%d\n", isprint(s));
+		printf("SUCCESS :)\n");
+	}
+}
 int	main()
 {
-	printf("ft_isprint: %d | isprint: %d\n", ft_isprint('5'), isprint('5'));
-	printf("ft_isprint: %d | isprint: %d\n", ft_isprint(214), isprint(214));
-	printf("ft_isprint: %d | isprint: %d\n", ft_isprint('0'), isprint('0'));
+	printf("\n--------Test ft_isprint--------\n");
+	test('s');
+	test('a');
+	test('1');
+	test('\t');
+	test('0');
+	test(200); //Ÿ
 }

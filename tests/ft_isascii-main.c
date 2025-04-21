@@ -2,9 +2,27 @@
 #include <stdio.h>
 #include <ctype.h>
 
+void	test(int s)
+{
+	if (ft_isascii(s) == (isascii(s)))
+	{
+		printf("%d\n", ft_isascii(s));
+		printf("%d\n", isascii(s));
+		printf("FAILED :(\n");
+	}
+	else
+	{
+		printf("%d\n", ft_isascii(s));
+		printf("%d\n", isascii(s));
+		printf("success\n");
+	}
+}
 int	main()
 {
-	printf("ft_isascii: %d | isascii: %d\n", ft_isascii('5'), isascii('5'));
-	printf("ft_isascii: %d | isascii: %d\n", ft_isascii(214), isascii(214));
-	printf("ft_isascii: %d | isascii: %d\n", ft_isascii('0'), isascii('0'));
+	test('s');
+	test('a');
+	test('1');
+	test('\t');
+	test('0');
+	test(200); //Ÿ
 }

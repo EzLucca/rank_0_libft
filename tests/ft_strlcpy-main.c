@@ -10,6 +10,7 @@ int    main(void)
     const char src[11] = "teststring";
     int dstsize = -1;
 
+	printf("\n\n--------ft_strlcpy--------\n\n");
     printf("ft_strlcpy: %zu\n", ft_strlcpy(dst, src, dstsize));
     printf("%s\n", dst);
     printf("strlcpy: %zu\n", strlcpy(dst2, src, dstsize));

@@ -1,14 +1,21 @@
 #include <stdio.h>
 #include "../libft.h"
 
-void	test(const char *s)
+void	test(char *s)
 {
-	if (ft_strdup(s) == (strdup(s)))
+	char *a = ft_strdup(s);
+	char *b = strdup(s);
+
+	if (strcmp(a, b) == 0)
 	{
+		printf("%s\n", a);
+		printf("%s\n", b);
 		printf("success\n");
 	}
 	else
 	{
+		printf("%s\n", a);
+		printf("%s\n", b);
 		printf("FAILED :(\n");
 	}
 }

@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+//Checks if the value c is a 7-bit unsigned char value 
 int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
