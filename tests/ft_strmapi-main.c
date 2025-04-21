@@ -2,27 +2,32 @@
 #include <stdio.h>
 #include "../libft.h"
 
-void	test(int test_nb, char *s1, char s2)
+void	test(int test_nb, char *s1, char (*s2)(unsigned int, char))
 {
-	int i = 0;
-	char a = ft_strmapi(s1, s2);
+    // int i = 0;
+    char *a = ft_strmapi(s1, s2);
 
-	printf("Test %d\n", test_nb);
-	while(a[i])
-	{
-		printf("String: %s\n", a[i]);
-		i++;
-	}
+    printf("Test %d\n", test_nb);
+    printf("String: %s\n", a);
+}
+
+char my_func(unsigned int i, char str)
+{
+    if (i % 2 == 0) 
+    {
+        return str - 32;
+    }
+    return str;
 }
 
 int main(void)
 {
 
-	printf("\n--------ft_substr--------\n");
-	test(1, "This is a good string ", ' ');
-	test(2, "The;thin;line  !", ';');
-	test(3, "", 'b');
-	test(4, "$   between love and hate      ", ' ');
-	test(5, "     This", ' ');
-	return(0);	
+    printf("\n--------ft_strmapi--------\n");
+    test(1, "this", my_func);
+    test(2, "the", my_func);
+    test(3, "", my_func);
+    test(4, "BETWEEN", my_func);
+    test(5, "     ", my_func); 
+    return(0);	
 }

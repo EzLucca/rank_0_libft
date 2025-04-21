@@ -35,7 +35,7 @@
 - [ok] ft_strtrim.c   
 - [ok] ft_split.c      
 - [ok] ft_itoa.c  
-- [] ft_strmapi.c    
+- [ok] ft_strmapi.c    
 - [] ft_striteri.c  
 - [] ft_putchar_fd.c 
 - [] ft_putstr_fd.c  
