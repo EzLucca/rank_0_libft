@@ -16,6 +16,5 @@ int    main(void)
     printf("strlcpy: %zu\n", strlcpy(dst2, src, dstsize));
     printf("%s\n", dst2);
 
-
     return (0);
 }
