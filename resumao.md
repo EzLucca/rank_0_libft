@@ -26,15 +26,15 @@
 - [ok] ft_strnstr.c      
 - [ok] ft_atoi.c         
 - [ok] ft_calloc.c     
-- [] ft_strdup.c        
+- [ok] ft_strdup.c        
 
 ## Funcoes adicionais
 
-- [] ft_substr.c   
-- [] ft_strjoin.c    
-- [] ft_strtrim.c   
-- [] ft_split.c      
-- [] ft_itoa.c  
+- [ok] ft_substr.c   
+- [ok] ft_strjoin.c    
+- [ok] ft_strtrim.c   
+- [ok] ft_split.c      
+- [ok] ft_itoa.c  
 - [] ft_strmapi.c    
 - [] ft_striteri.c  
 - [] ft_putchar_fd.c 
