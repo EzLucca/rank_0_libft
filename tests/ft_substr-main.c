@@ -9,6 +9,7 @@ void	test(int test_nb, char *s, int start, size_t len)
 	printf("Test %d\n", test_nb);
 	printf("String: %s\n", s);
 	printf("Substr: %s\n", a);
+	// free(a);
 }
 
 int main(void)
