@@ -6,11 +6,10 @@
 /*   By: edlucca <edlucca@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 10:27:20 by edlucca           #+#    #+#             */
-/*   Updated: 2025/04/21 18:07:30 by edlucca          ###   ########.fr       */
+/*   Updated: 2025/04/23 18:47:55 by edlucca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 //This should return the len of the substring

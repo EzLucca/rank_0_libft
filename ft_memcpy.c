@@ -6,7 +6,7 @@
 /*   By: edlucca <edlucca@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 10:21:28 by edlucca           #+#    #+#             */
-/*   Updated: 2025/04/15 10:21:36 by edlucca          ###   ########.fr       */
+/*   Updated: 2025/04/23 19:02:48 by edlucca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 //Copy n bytes from src to dest. Must not overlap.
 //The function returns a pointer to dest.
+
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	unsigned char	*tmp_dst;

@@ -6,9 +6,13 @@
 /*   By: edlucca <edlucca@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 10:22:37 by edlucca           #+#    #+#             */
-/*   Updated: 2025/04/15 10:22:42 by edlucca          ###   ########.fr       */
+/*   Updated: 2025/04/23 19:00:06 by edlucca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// If c is an uppercase letter, tolower() returns its lowercase equivalent, 
+// if a lowercase representation exists in the current locale. 
+// Otherwise, it returns c.
 
 int	ft_tolower(int c)
 {

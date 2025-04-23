@@ -6,11 +6,14 @@
 /*   By: edlucca <edlucca@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 10:27:07 by edlucca           #+#    #+#             */
-/*   Updated: 2025/04/15 10:27:11 by edlucca          ###   ########.fr       */
+/*   Updated: 2025/04/23 19:01:05 by edlucca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// Allocates memory (using malloc(3)) and returns a copy of ’s1’ with
+// characters from ’set’ removed from the beginning and the end.
 
 static int	to_trim(char const *set, char c);
 static char	*new_str(char const *s1, size_t start, size_t len);

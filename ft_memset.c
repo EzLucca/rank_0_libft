@@ -6,13 +6,14 @@
 /*   By: edlucca <edlucca@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 10:20:43 by edlucca           #+#    #+#             */
-/*   Updated: 2025/04/15 10:21:06 by edlucca          ###   ########.fr       */
+/*   Updated: 2025/04/23 19:02:39 by edlucca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h" 
 
 //Fill the n bytes of the memory area pointed by s with the constant type c
+
 void	*ft_memset(void *s, int c, size_t n)
 {
 	unsigned char	*temp_ptr;

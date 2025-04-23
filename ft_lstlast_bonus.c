@@ -6,13 +6,14 @@
 /*   By: edlucca <edlucca@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 10:29:01 by edlucca           #+#    #+#             */
-/*   Updated: 2025/04/15 10:29:03 by edlucca          ###   ########.fr       */
+/*   Updated: 2025/04/23 19:06:31 by edlucca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 //Return the last node of the list
+
 t_list	*ft_lstlast(t_list *lst)
 {
 	if (!lst)

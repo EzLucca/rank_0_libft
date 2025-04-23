@@ -6,7 +6,7 @@
 /*   By: edlucca <edlucca@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 10:18:51 by edlucca           #+#    #+#             */
-/*   Updated: 2025/04/15 10:18:54 by edlucca          ###   ########.fr       */
+/*   Updated: 2025/04/23 19:03:33 by edlucca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 //Create memory allocation filled with 0 
 //First if checks for overflow of nb_bytes and if size != 0.
+
 void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*tmp;

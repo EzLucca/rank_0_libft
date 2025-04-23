@@ -6,13 +6,14 @@
 /*   By: edlucca <edlucca@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 10:21:52 by edlucca           #+#    #+#             */
-/*   Updated: 2025/04/15 10:21:55 by edlucca          ###   ########.fr       */
+/*   Updated: 2025/04/23 19:02:52 by edlucca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 // Copies n bytes from src to dest. It uses a temporary array between the copy. 
+
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	char		*tmp_dst;

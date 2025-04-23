@@ -6,13 +6,14 @@
 /*   By: edlucca <edlucca@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 10:18:31 by edlucca           #+#    #+#             */
-/*   Updated: 2025/04/15 10:21:23 by edlucca          ###   ########.fr       */
+/*   Updated: 2025/04/23 19:00:33 by edlucca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 //Erase n bytes from pointer s writing 0 instead
+
 void	ft_bzero(void *s, size_t n)
 {
 	char	*temp_ptr;

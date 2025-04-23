@@ -6,7 +6,7 @@
 /*   By: edlucca <edlucca@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 10:29:42 by edlucca           #+#    #+#             */
-/*   Updated: 2025/04/15 10:29:44 by edlucca          ###   ########.fr       */
+/*   Updated: 2025/04/23 19:06:54 by edlucca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 // a new list resulting of the successive applications
 // of the function ’f’. The ’del’ function is used to
 // delete the content of a node if needed.
+
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*new_list;

@@ -6,13 +6,14 @@
 /*   By: edlucca <edlucca@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 10:26:06 by edlucca           #+#    #+#             */
-/*   Updated: 2025/04/15 10:26:19 by edlucca          ###   ########.fr       */
+/*   Updated: 2025/04/23 18:52:30 by edlucca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 //Locate the needle inside the haystack
+
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	size_t	h;

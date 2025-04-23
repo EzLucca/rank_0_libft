@@ -6,7 +6,7 @@
 /*   By: edlucca <edlucca@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 10:22:26 by edlucca           #+#    #+#             */
-/*   Updated: 2025/04/15 10:22:28 by edlucca          ###   ########.fr       */
+/*   Updated: 2025/04/23 19:03:00 by edlucca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 // a NUL, the length of the string is considered to be size and the destina‐
 // tion string will not be NUL-terminated (since there was no space for the
 // NUL).  This keeps strlcat() from running off the end of a string.
+
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	src_len;

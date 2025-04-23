@@ -6,7 +6,7 @@
 /*   By: edlucca <edlucca@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 10:22:45 by edlucca           #+#    #+#             */
-/*   Updated: 2025/04/15 10:22:47 by edlucca          ###   ########.fr       */
+/*   Updated: 2025/04/23 19:03:09 by edlucca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 // The  strchr()  function  returns a pointer to the first occurrence of the
 // character c in the string s.
+
 char	*ft_strchr(const char *s, int c)
 {
 	unsigned int	i;

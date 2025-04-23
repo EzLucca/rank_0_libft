@@ -6,7 +6,7 @@
 /*   By: edlucca <edlucca@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/21 22:05:57 by edlucca           #+#    #+#             */
-/*   Updated: 2025/04/21 22:06:02 by edlucca          ###   ########.fr       */
+/*   Updated: 2025/04/23 19:05:48 by edlucca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 // and the character itself as the second. A new
 // string is created (using malloc(3)) to store the
 // results from the successive applications of f.
+
 char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 {
 	unsigned int	i;

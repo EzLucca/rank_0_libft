@@ -6,11 +6,12 @@
 /*   By: edlucca <edlucca@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 10:19:13 by edlucca           #+#    #+#             */
-/*   Updated: 2025/04/15 10:19:18 by edlucca          ###   ########.fr       */
+/*   Updated: 2025/04/23 19:02:18 by edlucca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //Checks if the value c is a 7-bit unsigned char value 
+
 int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)

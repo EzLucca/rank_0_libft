@@ -6,13 +6,14 @@
 /*   By: edlucca <edlucca@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 10:23:33 by edlucca           #+#    #+#             */
-/*   Updated: 2025/04/15 10:23:53 by edlucca          ###   ########.fr       */
+/*   Updated: 2025/04/23 19:03:24 by edlucca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 //Compare the n bytes of each string s1 ans s2
+
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	const unsigned char	*str1;

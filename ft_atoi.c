@@ -6,11 +6,12 @@
 /*   By: edlucca <edlucca@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 10:15:00 by edlucca           #+#    #+#             */
-/*   Updated: 2025/04/15 10:15:07 by edlucca          ###   ########.fr       */
+/*   Updated: 2025/04/23 19:00:28 by edlucca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //Transform a string into an int
+
 int	ft_atoi(const char *nptr)
 {
 	long	number;
