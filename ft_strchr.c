@@ -10,9 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
-//return a ptr to the first char c in the string s
+// The  strchr()  function  returns a pointer to the first occurrence of the
+// character c in the string s.
 char	*ft_strchr(const char *s, int c)
 {
 	unsigned int	i;

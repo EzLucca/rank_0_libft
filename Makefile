@@ -42,6 +42,12 @@ fclean: clean
 
 re: fclean all
 
+test: axeltest.c $(NAME)
+	cc $(CFLAGS) -lbsd $^ -o cuckoo
+	./cuckoo
+	rm cuckoo
+	rm $(C_OBJECTS)
+
 bonus: $(C_OBJECTS) $(BONUS_OBJECTS)
 		$(AR) $(NAME) $^
 

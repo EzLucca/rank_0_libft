@@ -24,5 +24,5 @@ int	main()
 	test("abacaxi abacashi");
 	test("1 coelhinho mata muita gente");
 	test("dois coelhinhos \t matam muito mais");
-	test("");
+	test("\0");
 }

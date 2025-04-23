@@ -13,7 +13,7 @@
 //Transform a string into an int
 int	ft_atoi(const char *nptr)
 {
-	long    number;
+	long	number;
 	int		signal;
 
 	number = 0;

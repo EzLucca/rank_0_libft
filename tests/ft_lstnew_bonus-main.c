@@ -6,7 +6,7 @@
 void test(int test_nb, void *content)
 {
 	char *data = ft_strdup(content);
-	t_list * l =  ft_lstnew(data);
+	t_list *l =  ft_lstnew(data);
 	// t_list *l;
 
 	printf("Test %d\n", test_nb);

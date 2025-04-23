@@ -9,4 +9,5 @@ int	main()
 	size_t	n = 5;
 
 	printf("char is: %p\n", ft_memchr(s, c, n));
+	printf("char is: %p\n", memchr(s, c, n));
 }

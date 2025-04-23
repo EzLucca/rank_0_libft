@@ -4,15 +4,18 @@
 
 void	test(int test_nb, char *s1, char s2)
 {
-	int i = 0;
-	char **a = ft_split(s1, s2);
+	// int i = 0;
+	// char **a = ft_split(s1, s2);
+	ft_split(s1, s2);
 
 	printf("Test %d\n", test_nb);
-	while(a[i])
-	{
-		printf("String: %s\n", a[i]);
-		i++;
-	}
+	// while(a[i])
+	// {
+	// 	printf("String: %s\n", a[i]);
+	// 	free(a[i]);
+	// 	i++;
+	// }
+	// free(a);
 }
 
 int main(void)

@@ -15,11 +15,13 @@
 // Copies n bytes from src to dest. It uses a temporary array between the copy. 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	char	*tmp_dst;
-	char	*tmp_src;
-	size_t	i;
+	char		*tmp_dst;
+	const char	*tmp_src;
+	size_t		i;
 
-	tmp_src = (char *) src;
+	if (!dest && !src)
+		return (NULL);
+	tmp_src = (const char *) src;
 	tmp_dst = (char *) dest;
 	i = 0;
 	if (tmp_dst < tmp_src || tmp_dst >= (tmp_src + n))
@@ -37,5 +39,3 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-
-//review

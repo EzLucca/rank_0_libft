@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+// Applies the function f to each character of the
+// string s, passing its index as the first argument
+// and the character itself as the second. A new
+// string is created (using malloc(3)) to store the
+// results from the successive applications of f.
 char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 {
 	unsigned int	i;
@@ -27,7 +32,7 @@ char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 	i = 0;
 	while (i < len)
 	{
-		res[i] = (*f)(i, s[i]);
+		res[i] = f(i, s[i]);
 		i++;
 	}
 	res[i] = '\0';

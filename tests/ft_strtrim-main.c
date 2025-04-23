@@ -6,7 +6,7 @@
 int main()
 {
 	// int i = 0;
-	char *s = "aabaaaababbbabatrimbaaababbbbbbbbbb";
+	char *s = "aabaaacababbbabatrimbaaababbbbbbbbbb";
 	char *w;
 
 	w = ft_strtrim(s, "ab");

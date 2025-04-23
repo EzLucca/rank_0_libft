@@ -7,7 +7,7 @@
 - [ok] ft_isalpha.c          
 - [ok] ft_isdigit.c          
 - [ok] ft_isalnum.c         
-- [ok] ft_isascii.c       
+- [ok] ft_isascii.c  #     
 - [ok] ft_isprint.c       
 - [ok] ft_strlen.c         
 - [ok] ft_memset.c        
@@ -22,7 +22,7 @@
 - [ok] ft_strrchr.c      
 - [ok] ft_strncmp.c        
 - [ok] ft_memchr.c     
-- [ok] ft_memcmp.c      
+- [ok] ft_memcmp.c #     
 - [ok] ft_strnstr.c      
 - [ok] ft_atoi.c         
 - [ok] ft_calloc.c     
@@ -50,8 +50,8 @@
 - [ok] ft_lstsize_bonus.c
 - [ok] ft_lstlast_bonus.c
 - [ok] ft_lstadd_back_bonus.c
-- [] ft_lstdelone_bonus.c
-- [] ft_lstclear_bonus.c
-- [] ft_lstiter_bonus.c
+- [ok] ft_lstdelone_bonus.c
+- [ok] ft_lstclear_bonus.c
+- [ok] ft_lstiter_bonus.c
 - [] ft_lstmap_bonus.c
 

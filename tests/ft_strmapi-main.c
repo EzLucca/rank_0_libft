@@ -27,7 +27,7 @@ int main(void)
     test(1, "this", my_func);
     test(2, "the", my_func);
     test(3, "", my_func);
-    test(4, "BETWEEN", my_func);
+    test(4, "BETWEEN", my_func); 
     test(5, "     ", my_func); 
     return(0);	
 }

@@ -12,12 +12,17 @@
 
 #include "libft.h"
 
+// The strncmp() compares only the first (at most) n bytes of s1 and s2.
+// strncmp() functions return an integer less than, equal
+// to, or greater than zero if s1 (or the first n bytes thereof) is found,
+// respectively, to be less than, to match, or be greater than s2.
+
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	i;
 
 	i = 0;
-	while (( s1[i] || s2[i]) && i < n)
+	while ((s1[i] || s2[i]) && i < n)
 	{
 		if ((unsigned char) s1[i] != (unsigned char) s2[i])
 			return ((unsigned char) s1[i] - (unsigned char) s2[i]);

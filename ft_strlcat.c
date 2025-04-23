@@ -12,7 +12,12 @@
 
 #include "libft.h"
 
-//concatenate the src after dest. the size is the total number of elements.
+// Concatenate the src after dest. Return the total length string concatenated.
+// that means the initial length of dst plus the length of src.
+// if strlcat() traverses size characters without finding
+// a NUL, the length of the string is considered to be size and the destina‐
+// tion string will not be NUL-terminated (since there was no space for the
+// NUL).  This keeps strlcat() from running off the end of a string.
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	src_len;

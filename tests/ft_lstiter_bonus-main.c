@@ -12,9 +12,16 @@ void print_list(t_list *head)
 	printf("NULL\n");
 }
 
-void	deleterminator(void *deletor)
+void Maximizer(void *tobeup)
 {
-	free(deletor);
+    char *str = (char *)tobeup;
+    
+    while (*str)
+    {
+        if (*str >= 'a' && *str <= 'z')
+            *str -= 32; 
+        str++;
+    }
 }
 
 int main(void)
@@ -35,8 +42,7 @@ int main(void)
 
 	printf("List before deleting node 3:\n");
 	print_list(list);  // Print the original list (before deletion)
-	ft_lstdelone(node3, deleterminator); //deleting node3
-	node2->next = NULL; //updating the node2.next to NULL
+	ft_lstiter(list, Maximizer); //deleting 
 	printf("List after deleting node 3:\n");
 	print_list(list);
 
@@ -49,6 +55,5 @@ int main(void)
 		free(list);
 		list = temp;
 	}
-
 	return 0;
 }

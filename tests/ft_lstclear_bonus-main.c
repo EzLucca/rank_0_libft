@@ -12,7 +12,7 @@ void print_list(t_list *head)
 	printf("NULL\n");
 }
 
-void	deleterminator(void *deletor)
+void	eliminator(void *deletor)
 {
 	free(deletor);
 }
@@ -35,7 +35,7 @@ int main(void)
 
 	printf("List before deleting node 3:\n");
 	print_list(list);  // Print the original list (before deletion)
-	ft_lstdelone(node3, deleterminator); //deleting node3
+	ft_lstclear(&list, eliminator); //deleting all nodes
 	node2->next = NULL; //updating the node2.next to NULL
 	printf("List after deleting node 3:\n");
 	print_list(list);

@@ -6,7 +6,8 @@ int	main()
 {
 	char	*s1 = "Spring is coming ras";
 	char	*s2 = "Sprini";
-	unsigned int	n = 4;
+	unsigned int	n = 9;
 
-	printf("int is: %d\n", ft_strncmp(s1, s2, n));
+	printf("ft_strncmp: %d\n", ft_strncmp(s1, s2, n));
+	printf("strncmp: %d\n", strncmp(s1, s2, n));
 }

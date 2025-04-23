@@ -18,5 +18,6 @@ int main(void)
 	printf("\n--------ft_substr--------\n");
 	test(1, "This is a good string", 4, 8);
 	test(2, "This is a good string", 10, 4);
+	test(3, "This is a good string", 0, 3);
 	return(0);	
 }

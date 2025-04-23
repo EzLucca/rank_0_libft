@@ -8,13 +8,13 @@ void	test(int s)
 	{
 		printf("%d\n", ft_isascii(s));
 		printf("%d\n", isascii(s));
-		printf("FAILED :(\n");
+		printf("SUCCESS\n");
 	}
 	else
 	{
 		printf("%d\n", ft_isascii(s));
 		printf("%d\n", isascii(s));
-		printf("success\n");
+		printf("FAILED :(\n");
 	}
 }
 int	main()

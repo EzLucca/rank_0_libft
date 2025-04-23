@@ -8,7 +8,7 @@ int    main(void)
     char dst[100] = "HelloWorld!";
     char dst2[100] = "HelloWorld!";
     const char src[11] = "teststring";
-    int dstsize = -1;
+    int dstsize = 13;
 
 	printf("\n\n--------ft_strlcpy--------\n\n");
     printf("ft_strlcpy: %zu\n", ft_strlcpy(dst, src, dstsize));
