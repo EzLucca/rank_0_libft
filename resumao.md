@@ -53,5 +53,5 @@
 - [ok] ft_lstdelone_bonus.c
 - [ok] ft_lstclear_bonus.c
 - [ok] ft_lstiter_bonus.c
-- [] ft_lstmap_bonus.c
+- [ok] ft_lstmap_bonus.c
 

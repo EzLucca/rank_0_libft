@@ -17,51 +17,39 @@ void	eliminator(void *deletor)
 	free(deletor);
 }
 
-void	maximizer(void *tobeup)
+void	*maximizer(void *tobeup)
 {
-    char *str = (char *)tobeup;
-    
-    while (*str)
-    {
-        if (*str >= 'a' && *str <= 'z')
-            *str -= 32; 
-        str++;
-    }
+	char *str = (char *)tobeup;
+	char *upper = ft_strdup(str);
+	int i = 0;
+	while (upper[i])
+	{
+		if (upper[i] >= 'a' && upper[i] <= 'z')
+			upper[i] -= 32; 
+		i++;
+	}
+	return (upper);
 }
 
 int main(void)
 {
-	//Create the last element
-	t_list *list = NULL;
+	// Original list: "one" -> "two" -> "three"
+	t_list *original = ft_lstnew(ft_strdup("one"));
+	ft_lstadd_back(&original, ft_lstnew(ft_strdup("two")));
+	ft_lstadd_back(&original, ft_lstnew(ft_strdup("three")));
 
-	//Creating new nodes
-	t_list *node1 = ft_lstnew(ft_strdup("This is node 1"));
-	t_list *node2 = ft_lstnew(ft_strdup("Node 2"));
-	t_list *node3 = ft_lstnew(ft_strdup("Bergamota 3"));
+	printf("Original list:\n");
+	print_list(original);
 
-	//Linking them together
-	ft_lstadd_front(&list, node1);
-	ft_lstadd_front(&list, node2);
-	ft_lstadd_back(&list, node3);
-	//Should print node 2, node 1 and node 3
+	// Map the list using maximizer
+	t_list *mapped = ft_lstmap(original, maximizer, eliminator);
 
-	printf("List before deleting node 3:\n");
-	print_list(list);  // Print the original list (before deletion)
-	
-	ft_lstmap(list, maximizer, eliminator);
+	printf("\nMapped list:\n");
+	print_list(mapped);
 
-	printf("List after deleting node 3:\n");
-	print_list(list);
+	// Clean up
+	ft_lstclear(&original, eliminator);
+	ft_lstclear(&mapped, eliminator);
 
-	// Free all allocated memory
-	t_list *temp;
-	while (list)
-	{
-		temp = list->next;
-		free(list->content);
-		free(list);
-		list = temp;
-	}
-
-	return 0;
+	return (0);
 }
