@@ -14,6 +14,7 @@
 
 //Create memory allocation filled with 0 
 //First if checks for overflow of nb_bytes and if size != 0.
+//If nb_bytes overflows it should have a different value (!=) will be true
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {

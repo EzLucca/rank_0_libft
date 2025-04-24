@@ -13,6 +13,9 @@
 #include "libft.h"
 
 // Copies n bytes from src to dest. It uses a temporary array between the copy. 
+// The memory areas may overlap: copying takes place as though the bytes
+// in  src are first copied into a temporary array that does not overlap src or
+// dest, and the bytes are then copied from the temporary array to dest.
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {

@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: edlucca <edlucca@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/15 10:23:06 by edlucca           #+#    #+#             */
-/*   Updated: 2025/04/23 19:03:19 by edlucca          ###   ########.fr       */
+/*   Created: 2025/04/24 14:34:01 by edlucca           #+#    #+#             */
+/*   Updated: 2025/04/24 14:34:05 by edlucca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-//Scan n bytes for c in the memory area pointed by s
+// Scan n bytes for c in the memory area pointed by s
 //
 // The  memchr()  function  scans  the  initial  n  bytes of the memory area
 // pointed to by s for the first instance of c.  Both c and the bytes of the

@@ -14,21 +14,19 @@
 
 // The  strchr()  function  returns a pointer to the first occurrence of the
 // character c in the string s.
+// if c is specified as '\0', the functions return a pointer to the terminator.
 
 char	*ft_strchr(const char *s, int c)
 {
-	unsigned int	i;
-	unsigned char	cc;
+	int	i;
 
-	cc = (unsigned char) c;
+	c = (unsigned char) c;
 	i = 0;
-	while (s[i])
+	while (s[i] || c == '\0')
 	{
-		if (s[i] == cc)
+		if (s[i] == c)
 			return ((char *) &s[i]);
 		i++;
 	}
-	if (s[i] == cc)
-		return ((char *) &s[i]);
 	return (NULL);
 }

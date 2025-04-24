@@ -1,71 +1,5 @@
-
 #include "../libft.h"
 #include <stdio.h>
-// #include <string.h>
-
-// int main () 
-// {
-// 	char dst[50];
-// 	char src[50] = "This is a string";
-// 	char dst2[50];
-// 	char src2[50] = "This is a string";
-//
-// 	printf("before dst: %s\n", dst);
-// 	printf("before src: %s\n", src);
-// 	memcpy(dst, src, 7);
-// 	printf("after dst: %s\n", dst);
-// 	printf("after src: %s\n", src);
-//
-// 	printf("before dst: %s\n", dst);
-// 	printf("before src: %s\n", src);
-// 	ft_memcpy(dst2, src2, 7);
-// 	printf("after dst: %s\n", dst);
-// 	printf("after src: %s\n", src);
-//
-// 	return(0);
-// }
-
-#include "../libft.h"
-#include <stdio.h>
-// #include <ctype.h>
-// #include <string.h>
-
-// void test(int test_num, const char *src, size_t n)
-// {
-//     char dest1[100];
-//     char dest2[100];
-//
-//     // Apply ft_memcpy and memcpy
-//     ft_memcpy(dest1, src, n);
-//     memcpy(dest2, src, n);
-//
-//     // Compare the results
-//     printf("Test %d\n", test_num);
-//     printf("Input: \"%s\"\n", src);
-//     printf("ft_memcpy: \"%s\"\n", dest1);
-//     printf("memcpy: \"%s\"\n", dest2);
-//
-//     if (memcmp(dest1, dest2, 100) == 0)
-//         printf("SUCCESS :)\n\n");
-//     else
-//     {
-//         printf("FAILED :(\n");
-//         printf("Expected: \"%s\"\n", dest2);
-//         printf("Got: \"%s\"\n\n", dest1);
-//     }
-//
-// }
-//
-// int	main()
-// {
-// 	printf("\n--------Test ft_memcpy--------\n");
-// 	test(1, "", 15);
-// 	test(2, "abacaxi abacashi", 7);
-// 	test(3, "1 coelhinho mata muita gente", 5);
-// 	test(4, "dois coelhinhos \t matam muito mais", 2);
-// 	test(5, "string", 2);
-// 	return (0);
-// }
 void print_test_result(int test_num, int passed)
 {
     if (passed)
@@ -120,7 +54,7 @@ int main()
 
     // Test 6: Copying overlapping memory (should not work correctly for ft_memcpy, ideally use ft_memmove)
     char src6[] = "Overlapping Memory Test";
-    test_memcpy(6, src6 + 5, src6, 12, "verlapping Memory Test"); // Should ideally cause unexpected behavior!
+    test_memcpy(6, src6 + 5, src6, 12, "Overlapping Memory Test"); // Should ideally cause unexpected behavior!
 
     // Test 7: Large size test, copy a large block of memory
     char src7[1000];

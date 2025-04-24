@@ -5,7 +5,7 @@
 int	main(void)
 {
 	char	*str = "String";
-	char	 c = 114;
+	char	 c = 'a';
 
 	printf("char is: %s\n", ft_strchr(str, c));
 	printf("char is: %s\n", strchr(str, c));

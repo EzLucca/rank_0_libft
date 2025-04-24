@@ -24,7 +24,7 @@ int main(void)
 {
 
     printf("\n--------ft_striteri--------\n");
-    test(1, strdup("this"), my_func);
+    test(1, strdup("this"), NULL);
     test(2, strdup("the"), my_func);
     test(3, strdup(""), my_func);
     test(4, strdup("between"), my_func);
