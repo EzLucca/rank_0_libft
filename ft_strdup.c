@@ -12,9 +12,9 @@
 
 #include "libft.h"
 
-// Allocates memory (using malloc(3)) and returns a substring from the string ’s’.
+// Allocates memory (using malloc(3)) and returns a substring from string ’s’.
 // The substring starts at index ’start’ and has a maximum length of ’len’.
-// On success, the strdup() function returns a pointer to the duplicated string.
+// The strdup() function returns a pointer to the duplicated string.
 // It returns NULL if insufficient memory was available,
 // with errno set to indicate the cause of the error.
 
