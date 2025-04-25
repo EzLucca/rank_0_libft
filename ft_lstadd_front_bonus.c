@@ -6,13 +6,14 @@
 /*   By: edlucca <edlucca@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 10:20:02 by edlucca           #+#    #+#             */
-/*   Updated: 2025/04/23 19:06:23 by edlucca          ###   ########.fr       */
+/*   Updated: 2025/04/25 16:14:00 by edlucca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-//Adds the node 'new' at the beginning of the list
+// Adds the node 'new' at the beginning of the list
+// lst is the address of the first node of the list
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {

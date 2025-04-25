@@ -15,6 +15,8 @@
 // Deletes and frees the given node and all its
 // successors, using the function ’del’ and free(3).
 // Finally, set the pointer to the list to NULL.
+// lst is a linked list
+// 'del' is a pointer to a func responsible of deleting the content nodes.
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {

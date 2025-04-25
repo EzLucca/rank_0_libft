@@ -6,13 +6,14 @@
 /*   By: edlucca <edlucca@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 10:28:38 by edlucca           #+#    #+#             */
-/*   Updated: 2025/04/23 19:06:16 by edlucca          ###   ########.fr       */
+/*   Updated: 2025/04/25 15:06:05 by edlucca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-//Allocates a new list node and sets its content and next pointer.
+// Link a new node and sets its content to content 
+// Sets the new node to point next NULL.
 
 t_list	*ft_lstnew(void *content)
 {

@@ -12,7 +12,9 @@
 
 #include "libft.h"
 
-//Return the last node of the list
+// Iterate all the next pointer of the nodes until the last node is NULL
+// lst is a pointer to the first node of the linked list
+// The while loop checks for the content of the next pointer
 
 t_list	*ft_lstlast(t_list *lst)
 {

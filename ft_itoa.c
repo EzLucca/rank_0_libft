@@ -34,8 +34,8 @@ static	int	int_len(long nbr)
 char	*ft_itoa(int n)
 {
 	int		len;
-	char	*result;
 	long	nbr;
+	char	*result;
 
 	nbr = n;
 	len = int_len(nbr);
@@ -50,7 +50,7 @@ char	*ft_itoa(int n)
 		nbr = -nbr;
 		result[0] = '-';
 	}
-	while (nbr != 0)
+	while (nbr > 0)
 	{
 		result[--len] = ((nbr % 10) + 48);
 		nbr = nbr / 10;

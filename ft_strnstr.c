@@ -6,30 +6,35 @@
 /*   By: edlucca <edlucca@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 10:26:06 by edlucca           #+#    #+#             */
-/*   Updated: 2025/04/23 18:52:30 by edlucca          ###   ########.fr       */
+/*   Updated: 2025/04/25 13:16:55 by edlucca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-//Locate the needle inside the haystack
+// Locate the first len elements of "little" string inside the "big".
+//
+// Return:
+// "big" if "little" is empty
+// "NULL" if "little" is not found
+// "*big" to the first char where is found
 
-char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
+char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	size_t	h;
 	size_t	n;
 
 	h = 0;
 	n = 0;
-	if (needle[0] == 0)
-		return ((char *) haystack);
-	while (haystack[h] && h < len)
+	if (little[0] == 0)
+		return ((char *) big);
+	while (big[h] && h < len)
 	{
-		while (haystack[h + n] == needle[n] && haystack[h + n] && h + n < len)
+		while (big[h + n] == little[n] && big[h + n] && h + n < len)
 		{
 			n++;
-			if (needle[n] == 0)
-				return ((char *) haystack + h);
+			if (little[n] == 0)
+				return ((char *) big + h);
 		}
 		h++;
 		n = 0;

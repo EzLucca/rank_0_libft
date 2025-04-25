@@ -2,12 +2,13 @@
 
 - [ok] libft.h
 - [ok] Makefile
+
 ## Funcoes obrigatorias
 
 - [ok] ft_isalpha.c          
 - [ok] ft_isdigit.c          
 - [ok] ft_isalnum.c         
-- [ok] ft_isascii.c  #     
+- [ok] ft_isascii.c       
 - [ok] ft_isprint.c       
 - [ok] ft_strlen.c         
 - [ok] ft_memset.c        
@@ -22,7 +23,7 @@
 - [ok] ft_strrchr.c      
 - [ok] ft_strncmp.c        
 - [ok] ft_memchr.c     
-- [ok] ft_memcmp.c #     
+- [ok] ft_memcmp.c      
 - [ok] ft_strnstr.c      
 - [ok] ft_atoi.c         
 - [ok] ft_calloc.c     
@@ -37,11 +38,10 @@
 - [ok] ft_itoa.c  
 - [ok] ft_strmapi.c    
 - [ok] ft_striteri.c  
-- [] ft_putchar_fd.c 
-- [] ft_putstr_fd.c  
-- [] ft_putendl_fd.c 
-- [] ft_putnbr_fd.c  
-
+- [ok] ft_putchar_fd.c 
+- [ok] ft_putstr_fd.c  
+- [ok] ft_putendl_fd.c 
+- [ok] ft_putnbr_fd.c  
 
 ## Bonus functions
 

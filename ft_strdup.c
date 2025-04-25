@@ -6,17 +6,15 @@
 /*   By: edlucca <edlucca@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/21 17:10:10 by edlucca           #+#    #+#             */
-/*   Updated: 2025/04/23 19:04:57 by edlucca          ###   ########.fr       */
+/*   Updated: 2025/04/25 13:41:36 by edlucca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// Allocates memory (using malloc(3)) and returns a substring from string ’s’.
-// The substring starts at index ’start’ and has a maximum length of ’len’.
-// The strdup() function returns a pointer to the duplicated string.
-// It returns NULL if insufficient memory was available,
-// with errno set to indicate the cause of the error.
+// The  strdup() function returns a new string which is a 
+// duplicate of the string "s". 
+// Memory for the new string is obtained with  malloc(3), and can be free(3).
 
 char	*ft_strdup(const char *s)
 {

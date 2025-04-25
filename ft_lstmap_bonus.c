@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: edlucca <edlucca@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/15 10:29:42 by edlucca           #+#    #+#             */
-/*   Updated: 2025/04/23 19:06:54 by edlucca          ###   ########.fr       */
+/*   Created: 2025/04/25 17:23:39 by edlucca           #+#    #+#             */
+/*   Updated: 2025/04/25 17:23:41 by edlucca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,10 +28,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	new_list = NULL;
 	while (lst)
 	{
-		if (f)
-			new_node = ft_lstnew(f(lst->content));
-		else
-			new_node = ft_lstnew(lst->content);
+		new_node = ft_lstnew(f(lst->content));
 		if (!new_node)
 		{
 			ft_lstclear(&new_list, del);

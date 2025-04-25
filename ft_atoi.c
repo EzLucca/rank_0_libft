@@ -6,11 +6,15 @@
 /*   By: edlucca <edlucca@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 10:15:00 by edlucca           #+#    #+#             */
-/*   Updated: 2025/04/23 19:00:28 by edlucca          ###   ########.fr       */
+/*   Updated: 2025/04/25 13:19:30 by edlucca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Transform a string into an int
+// Transform a string into an int
+// Behaviour is the same as strtol() but atoi don't detect errors.
+//
+// Return:
+// The converted value or 0 on error.
 
 int	ft_atoi(const char *nptr)
 {

@@ -14,23 +14,22 @@
 
 // Concatenate the src after dest. Return the total length string concatenated.
 // that means the initial length of dst plus the length of src.
-// if strlcat() traverses size characters without finding
-// a NUL, the length of the string is considered to be size and the destina‐
-// tion string will not be NUL-terminated (since there was no space for the
-// NUL).  This keeps strlcat() from running off the end of a string.
+// Dst_len is bigger or equal than size it return size plus src_len 
+// If the src is smaller than the space we concatenate including the null.
+// Otherwise we copy the src -1 and manually null terminate.
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	src_len;
 	size_t	dst_len;
+	size_t	space_left;
 
 	src_len = ft_strlen(src);
 	dst_len = ft_strlen(dst);
 	if (dst_len >= size)
-		dst_len = size;
-	if (dst_len == size)
 		return (size + src_len);
-	if (src_len < size - dst_len)
+	space_left = size - dst_len;
+	if (src_len < space_left)
 		ft_memcpy(dst + dst_len, src, src_len + 1);
 	else
 	{

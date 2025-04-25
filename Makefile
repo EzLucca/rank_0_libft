@@ -42,7 +42,7 @@ fclean: clean
 
 re: fclean all
 
-test: axeltest.c $(NAME)
+test: testaxel.c $(NAME)
 	cc $(CFLAGS) -lbsd $^ -o cuckoo
 	./cuckoo
 	rm cuckoo

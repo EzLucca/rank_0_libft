@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-//Erase n bytes from pointer s writing 0 instead
+//Erase n bytes data from pointer s writing 0 instead starting from s
 
 void	ft_bzero(void *s, size_t n)
 {

@@ -6,7 +6,7 @@
 /*   By: edlucca <edlucca@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 10:22:45 by edlucca           #+#    #+#             */
-/*   Updated: 2025/04/23 19:03:09 by edlucca          ###   ########.fr       */
+/*   Updated: 2025/04/25 17:25:22 by edlucca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,13 @@ char	*ft_strchr(const char *s, int c)
 
 	c = (unsigned char) c;
 	i = 0;
-	while (s[i] || c == '\0')
+	while (s[i])
 	{
 		if (s[i] == c)
 			return ((char *) &s[i]);
 		i++;
 	}
+	if (s[i] == c)
+		return ((char *) &s[i]);
 	return (NULL);
 }

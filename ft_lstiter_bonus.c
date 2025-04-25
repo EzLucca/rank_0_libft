@@ -13,7 +13,7 @@
 #include "libft.h"
 
 // Iterates through the list ’lst’ and applies the
-// function ’f’ to the content of each node.
+// 'f' is a pointer to a func that will do something to the content nodes.
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {

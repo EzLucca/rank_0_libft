@@ -14,6 +14,8 @@
 
 // The strrchr() function returns a pointer to the last  occurrence  of  the
 // character c in the string s.
+// The variable res will store the most recent match
+// if c is specified as '\0', the functions return a pointer to the terminator.
 
 char	*ft_strrchr(const char *s, int c)
 {

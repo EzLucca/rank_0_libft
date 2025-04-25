@@ -12,7 +12,8 @@
 
 #include "libft.h" 
 
-//Fill the n bytes of the memory area pointed by s with the constant type c
+// Fill the n bytes of the memory area pointed by s with the constant type c
+// The memset() function returns a pointer to the memory area s.
 
 void	*ft_memset(void *s, int c, size_t n)
 {

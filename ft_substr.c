@@ -6,7 +6,7 @@
 /*   By: edlucca <edlucca@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 10:26:47 by edlucca           #+#    #+#             */
-/*   Updated: 2025/04/23 19:01:31 by edlucca          ###   ########.fr       */
+/*   Updated: 2025/04/25 13:52:15 by edlucca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,9 @@
 // Allocates memory (using malloc(3)) and returns a substring from 
 // the string ’s’. The substring starts at index ’start’ and has a
 // maximum length of ’len’.
+//
+// If "len" is longer than the number of characters available after "start",
+// you adjust it. This ensures you don’t read past the end of the string.
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
@@ -22,7 +25,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char	*string;
 
 	i = 0;
-	if (!*s)
+	if (!s)
 		return (NULL);
 	if (start > ft_strlen(s))
 		return (ft_strdup(""));

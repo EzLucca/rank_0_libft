@@ -12,15 +12,18 @@
 
 #include "libft.h"
 
-//Add the node 'new' to the end of the list
+// Add the node 'new' to the end of the list
+// check if the 'lst' and 'new' are NULL
+// If there is no node it sets 'new' as the first
+// Otherwise goes to the last.
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*last;
 
-	if (NULL == lst)
+	if (!lst || !new)
 		return ;
-	if (NULL == *lst)
+	if (*lst == NULL)
 	{
 		*lst = new;
 		return ;
