@@ -28,9 +28,12 @@ void test_truncated_copy() {
 void test_zero_size() {
 	char dst[5] = "XXXX";  // Should stay untouched
 	size_t result = ft_strlcpy(dst, "Test", 0);
+	size_t result2 = strlcpy(dst, "Test", 0);
 	assert(dst[0] == 'X');  // First char unchanged
 	assert(result == 4);    // Length of source
 	printf("✅ Size 0 test passed\n");
+	printf("ft_strlcpy: %ld\n", result);
+	printf("strlcpy: %ld\n", result2);
 }
 
 void test_empty_source() {
