@@ -5,7 +5,7 @@
 
 ## Funcoes obrigatorias
 
-- [ok] ft_isalpha.c          
+ [ok] ft_isalpha.c          
 - [ok] ft_isdigit.c          
 - [ok] ft_isalnum.c         
 - [ok] ft_isascii.c       
@@ -35,7 +35,7 @@
 - [ok] ft_strjoin.c    
 - [ok] ft_strtrim.c   
 - [ok] ft_split.c      
-- [ok] ft_itoa.c  
+- [ok] ft_itoa.c  ##
 - [ok] ft_strmapi.c    
 - [ok] ft_striteri.c  
 - [ok] ft_putchar_fd.c 

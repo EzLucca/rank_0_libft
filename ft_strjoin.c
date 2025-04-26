@@ -6,7 +6,7 @@
 /*   By: edlucca <edlucca@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 10:26:59 by edlucca           #+#    #+#             */
-/*   Updated: 2025/04/23 19:05:24 by edlucca          ###   ########.fr       */
+/*   Updated: 2025/04/26 22:26:28 by edlucca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,19 +17,16 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	int		i;
-	int		j;
+	int		s1_len;
+	int		s2_len;
 	char	*array;
 
-	i = 0;
-	j = 0;
-	array = ft_calloc((ft_strlen(s1) + ft_strlen(s2) + 1), sizeof(char));
+	s1_len = ft_strlen(s1);
+	s2_len = ft_strlen(s2);
+	array = ft_calloc((s1_len + s2_len + 1), sizeof(char));
 	if (!array)
 		return (NULL);
-	while (s1[i])
-		array[j++] = s1[i++];
-	i = 0;
-	while (s2[i])
-		array[j++] = s2[i++];
+    ft_memcpy(array, s1, s1_len);
+    ft_memcpy(array + s1_len, s2, s2_len);
 	return (array);
 }

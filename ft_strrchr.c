@@ -6,7 +6,7 @@
 /*   By: edlucca <edlucca@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 10:22:51 by edlucca           #+#    #+#             */
-/*   Updated: 2025/04/23 18:52:49 by edlucca          ###   ########.fr       */
+/*   Updated: 2025/04/26 21:11:14 by edlucca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@
 char	*ft_strrchr(const char *s, int c)
 {
 	unsigned int	i;
-	char			*res;
 	char			cc;
+    char			*res;
 
 	cc = (char) c;
 	res = NULL;

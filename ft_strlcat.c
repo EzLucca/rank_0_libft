@@ -6,15 +6,15 @@
 /*   By: edlucca <edlucca@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 10:22:26 by edlucca           #+#    #+#             */
-/*   Updated: 2025/04/23 19:03:00 by edlucca          ###   ########.fr       */
+/*   Updated: 2025/04/26 20:59:40 by edlucca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 // Concatenate the src after dest. Return the total length string concatenated.
-// that means the initial length of dst plus the length of src.
-// Dst_len is bigger or equal than size it return size plus src_len 
+// That means the initial length of dst plus the length of src.
+// If dst_len is bigger or equal than size it return size plus src_len 
 // If the src is smaller than the space we concatenate including the null.
 // Otherwise we copy the src -1 and manually null terminate.
 

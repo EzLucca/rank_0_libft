@@ -6,7 +6,7 @@
 /*   By: edlucca <edlucca@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 10:21:52 by edlucca           #+#    #+#             */
-/*   Updated: 2025/04/23 19:02:52 by edlucca          ###   ########.fr       */
+/*   Updated: 2025/04/26 20:51:42 by edlucca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,12 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	char		*tmp_dst;
-	const char	*tmp_src;
+	unsigned char		*tmp_dst;
+	const unsigned char	*tmp_src;
 	size_t		i;
 
-	tmp_src = (const char *) src;
-	tmp_dst = (char *) dest;
+	tmp_src = (const unsigned char *) src;
+	tmp_dst = (unsigned char *) dest;
 	i = 0;
 	if (tmp_dst < tmp_src)
 	{
