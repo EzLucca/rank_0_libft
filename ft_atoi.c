@@ -18,27 +18,27 @@
 
 int	ft_atoi(const char *nptr)
 {
-    long	number;
-    int		sign;
+	long	number;
+	int		sign;
 
-    number = 0;
-    sign = 1;
-    while ((*nptr >= '\t' && *nptr <= '\r') || (*nptr == ' '))
-        nptr++;
-    if (*nptr == '+' || *nptr == '-')
-    {
-        if (*nptr == '-')
-            sign = -1;
-        nptr++;
-    }
-    while (*nptr >= '0' && *nptr <= '9')
-    {
-        number = number * 10 + (*nptr - '0');
-        if (sign == 1 && number < 0)
-            return (-1);
-        else if (sign == -1 && number < 0)
-            return (0);
-        nptr++;
-    }
-    return ((int)(number * sign));
+	number = 0;
+	sign = 1;
+	while ((*nptr >= '\t' && *nptr <= '\r') || (*nptr == ' '))
+		nptr++;
+	if (*nptr == '+' || *nptr == '-')
+	{
+		if (*nptr == '-')
+			sign = -1;
+		nptr++;
+	}
+	while (*nptr >= '0' && *nptr <= '9')
+	{
+		number = number * 10 + (*nptr - '0');
+		if (sign == 1 && number < 0)
+			return (-1);
+		else if (sign == -1 && number < 0)
+			return (0);
+		nptr++;
+	}
+	return ((int)(number * sign));
 }

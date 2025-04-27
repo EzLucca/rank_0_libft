@@ -20,11 +20,11 @@
 
 t_list	*ft_lstlast(t_list *lst)
 {
-    t_list *tmp_lst;
+	t_list	*tmp_lst;
 
 	if (!lst)
 		return (NULL);
-    tmp_lst = lst;
+	tmp_lst = lst;
 	while (tmp_lst->next != NULL)
 	{
 		tmp_lst = tmp_lst->next;

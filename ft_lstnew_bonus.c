@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-// Link a new node and sets its its member variable content to parameter content 
+// Link a new node and sets its member variable content to parameter content 
 // Sets the member variable next to point NULL.
 
 t_list	*ft_lstnew(void *content)

@@ -35,6 +35,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	string = ft_calloc(len + 1, sizeof(char));
 	if (!string)
 		return (NULL);
-    ft_memcpy(string, s + start, len);
+	ft_memcpy(string, s + start, len);
 	return (string);
 }

@@ -21,7 +21,7 @@ char	*ft_strrchr(const char *s, int c)
 {
 	unsigned int	i;
 	char			cc;
-    char			*res;
+	char			*res;
 
 	cc = (char) c;
 	res = NULL;

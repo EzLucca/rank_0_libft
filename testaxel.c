@@ -357,11 +357,11 @@ int main()
 		// size_t SIZE_MAX = 0xffffffffffffffffull;
 		ASSERT(!ft_calloc(420, 69) == !calloc(420, 69));
 		ASSERT(!ft_calloc(0, 0) == !calloc(0, 0));
-		ASSERT(!ft_calloc(SIZE_MAX, 0) == !calloc(SIZE_MAX, 0));
-		ASSERT(!ft_calloc(SIZE_MAX, 2) == !calloc(SIZE_MAX, 2));
-		ASSERT(!ft_calloc(0, SIZE_MAX) == !calloc(0, SIZE_MAX));
-		ASSERT(!ft_calloc(2, SIZE_MAX) == !calloc(2, SIZE_MAX));
-		ASSERT(!ft_calloc(SIZE_MAX, SIZE_MAX) == !calloc(SIZE_MAX, SIZE_MAX));
+		ASSERT(!ft_calloc(SSIZE_MAX, 0) == !calloc(SSIZE_MAX, 0));
+		ASSERT(!ft_calloc(SSIZE_MAX, 2) == !calloc(SSIZE_MAX, 2));
+		ASSERT(!ft_calloc(0, SSIZE_MAX) == !calloc(0, SSIZE_MAX));
+		ASSERT(!ft_calloc(2, SSIZE_MAX) == !calloc(2, SSIZE_MAX));
+		ASSERT(!ft_calloc(SSIZE_MAX, SSIZE_MAX) == !calloc(SSIZE_MAX, SSIZE_MAX));
 	}
 
 	SECTION("ft_strdup");
