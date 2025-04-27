@@ -15,14 +15,19 @@
 // Iterate all the next pointer of the nodes until the last node is NULL
 // lst is a pointer to the first node of the linked list
 // The while loop checks for the content of the next pointer
+// The tmp_lst is created to don't change the head of the linked list
+// Returns the last node of the list.
 
 t_list	*ft_lstlast(t_list *lst)
 {
+    t_list *tmp_lst;
+
 	if (!lst)
 		return (NULL);
-	while (lst->next != NULL)
+    tmp_lst = lst;
+	while (tmp_lst->next != NULL)
 	{
-		lst = lst->next;
+		tmp_lst = tmp_lst->next;
 	}
-	return (lst);
+	return (tmp_lst);
 }

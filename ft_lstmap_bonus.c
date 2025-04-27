@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+// lst: The address of a pointer to a node.
+// f: The address of the function applied to each node’s content.
+// del: The address of the function used to delete a node’s content if needed.
+//
 // Iterates through the list ’lst’, applies the
 // function ’f’ to each node’s content, and creates
 // a new list resulting of the successive applications

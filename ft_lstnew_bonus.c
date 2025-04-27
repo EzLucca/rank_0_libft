@@ -12,8 +12,8 @@
 
 #include "libft.h"
 
-// Link a new node and sets its content to content 
-// Sets the new node to point next NULL.
+// Link a new node and sets its its member variable content to parameter content 
+// Sets the member variable next to point NULL.
 
 t_list	*ft_lstnew(void *content)
 {

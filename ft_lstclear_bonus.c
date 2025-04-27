@@ -12,24 +12,23 @@
 
 #include "libft.h"
 
+// lst: The address of a pointer to a node.
+// del: The address of the function used to delete the content of the node.
+//
 // Deletes and frees the given node and all its
 // successors, using the function ’del’ and free(3).
 // Finally, set the pointer to the list to NULL.
-// lst is a linked list
-// 'del' is a pointer to a func responsible of deleting the content nodes.
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	t_list	*current;
 	t_list	*tmp;
 
 	if (!lst || !del)
 		return ;
-	current = *lst;
-	while (current != NULL)
+	while (*lst)
 	{
-		tmp = current;
-		current = current->next;
+		tmp = *lst;
+		*lst = (*lst)->next;
 		del(tmp->content);
 		free(tmp);
 	}

@@ -17,10 +17,6 @@
 
 # include <stdlib.h>
 # include <unistd.h>
-# include <string.h>
-# include <limits.h>
-# include <stdint.h>
-# include <ctype.h>
 
 // Mandatory functions
 

@@ -19,26 +19,26 @@
 int	ft_atoi(const char *nptr)
 {
     long	number;
-    int		signal;
+    int		sign;
 
     number = 0;
-    signal = 1;
+    sign = 1;
     while ((*nptr >= '\t' && *nptr <= '\r') || (*nptr == ' '))
         nptr++;
     if (*nptr == '+' || *nptr == '-')
     {
         if (*nptr == '-')
-            signal = -1;
+            sign = -1;
         nptr++;
     }
     while (*nptr >= '0' && *nptr <= '9')
     {
         number = number * 10 + (*nptr - '0');
-        if (number < 0 && signal == 1)
-        	return (-1);
-        else if (number < 0 && signal == -1)
-        	return (0);
+        if (sign == 1 && number < 0)
+            return (-1);
+        else if (sign == -1 && number < 0)
+            return (0);
         nptr++;
     }
-    return ((int)(number * signal));
+    return ((int)(number * sign));
 }

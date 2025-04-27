@@ -12,6 +12,8 @@
 
 #include "libft.h"
 
+// lst: The node to free.
+// del: The address of the function used to delete the content.
 // Takes a node as parameter and frees its content
 // using the function ’del’. Free the node itself but
 // does NOT free the next node.

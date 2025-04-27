@@ -12,6 +12,9 @@
 
 #include "libft.h"
 
+// lst: The address of a pointer to the first node of a list.
+// new: The address of a pointer to the node to be added.
+//
 // Add the node 'new' to the end of the list
 // check if the 'lst' and 'new' are NULL
 // If there is no node it sets 'new' as the first
