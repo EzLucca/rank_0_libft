@@ -23,10 +23,11 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	s1_len = ft_strlen(s1);
 	s2_len = ft_strlen(s2);
-	array = ft_calloc((s1_len + s2_len + 1), sizeof(char));
+	array = malloc((s1_len + s2_len + 1) * sizeof(char));
 	if (!array)
 		return (NULL);
 	ft_memcpy(array, s1, s1_len);
 	ft_memcpy(array + s1_len, s2, s2_len);
+	array[s1_len + s2_len] = '\0';
 	return (array);
 }

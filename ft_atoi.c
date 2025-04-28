@@ -16,6 +16,7 @@
 // Return:
 // The converted value or 0 on error.
 
+#include <limits.h>
 int	ft_atoi(const char *nptr)
 {
 	long	number;
@@ -41,4 +42,7 @@ int	ft_atoi(const char *nptr)
 		nptr++;
 	}
 	return ((int)(number * sign));
+
 }
+
+//correct the overflow

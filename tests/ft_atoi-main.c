@@ -21,8 +21,8 @@
 // 	printf("atoi = %d\n\n", atoi("-2147483648"));
 //
 // 	printf("INT_MAX\n");
-// 	printf("ft_atoi = %d\t", ft_atoi("2147483647"));
-// 	printf("atoi = %d\n\n", atoi("2147483647"));
+// 	printf("ft_atoi = %d\t", ft_atoi("2147483649"));
+// 	printf("atoi = %d\n\n", atoi("2147483649"));
 //
 // 	printf("LLONG_MAX\n");
 // 	printf("ft_atoi = %d\t", ft_atoi("9223372036854775807"));
@@ -36,9 +36,10 @@
 // 	printf("ft_atoi = %d\t", ft_atoi("9223372036854775818"));
 // 	printf("atoi = %d\n\n", atoi("9223372036854775818"));
 // }
+
  int main(void)
 {
-    char *s = "-21474836481111111111111111111111111111111111";
+    char *s = "9223372036854775818111111111111111111111111111111";
     char *str;
 
     int i = 2;
@@ -53,4 +54,4 @@
         free(str);
         i++;
     }
-} 
+}
