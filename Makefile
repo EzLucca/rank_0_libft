@@ -23,6 +23,8 @@ BONUSFILES = ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c \
              ft_lstclear_bonus.c ft_lstiter_bonus.c ft_lstmap_bonus.c
 
 C_OBJECTS = $(SRCS:.c=.o)
+.SECONDARY: ${C_OBJECTS}
+
 
 BONUS_OBJECTS = $(BONUSFILES:.c=.o)
 
